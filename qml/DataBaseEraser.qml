@@ -1,6 +1,6 @@
 import QtQuick 2.4
-import Ubuntu.Components 1.3
-import Ubuntu.Components.Popups 1.3
+import Lomiri.Components 1.3
+import Lomiri.Components.Popups 1.3
 
 /* to replace the 'incomplete' QML API U1db with the low-level QtQuick API */
 import QtQuick.LocalStorage 2.0
@@ -36,13 +36,13 @@ Dialog {
                     id: importButton
                     text: i18n.tr("Delete")
                     width: units.gu(14)
-                    color: UbuntuColors.red
+                    color: LomiriColors.red
                     onClicked: {
                           loadingPageActivity.running = true
                           Storage.cleanAllDatabase();
 
                           deleteOperationResult.text = i18n.tr("Succesfully Removed ALL data")
-                          deleteOperationResult.color = UbuntuColors.green
+                          deleteOperationResult.color = LomiriColors.green
                           closeButton.enabled = true
 
                           /* blank settings flag that notify default data already imported.

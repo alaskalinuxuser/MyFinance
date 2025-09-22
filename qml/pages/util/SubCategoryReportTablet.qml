@@ -1,13 +1,13 @@
 import QtQuick 2.4
 
 //import QtQuick.Layouts 1.3
-import Ubuntu.Components 1.3
-import Ubuntu.Components.Popups 1.3
-import Ubuntu.Components.Pickers 1.3
+import Lomiri.Components 1.3
+import Lomiri.Components.Popups 1.3
+import Lomiri.Components.Pickers 1.3
 
 /* replace the 'incomplete' QML API U1db with the low-level QtQuick API */
 import QtQuick.LocalStorage 2.0
-import Ubuntu.Components.ListItems 1.3 as ListItem
+import Lomiri.Components.ListItems 1.3 as ListItem
 
 /* Thanks to: https://github.com/jwintz/qchart.js for QML bindings for Charts.js, */
 
@@ -313,7 +313,7 @@ Column{
                    Rectangle {
                        id: wrapper
                        height: legendRow.height + units.gu(1)
-                       border.color: UbuntuColors.lightGrey
+                       border.color: LomiriColors.lightGrey
                        border.width:units.gu(1)
 
                        Label {
@@ -363,7 +363,7 @@ Column{
                Rectangle {
                    id: wrapper
                    height: legendEntry.height + units.gu(1)
-                   border.color: UbuntuColors.lightGrey
+                   border.color: LomiriColors.lightGrey
                    border.width:units.gu(1)
 
                    Label {
@@ -412,7 +412,7 @@ Column{
                Rectangle {
                    id: wrapper
                    height: legendEntry.height + units.gu(1)
-                   border.color: UbuntuColors.lightGrey
+                   border.color: LomiriColors.lightGrey
                    border.width:units.gu(1)
 
                    Label {

@@ -1,12 +1,12 @@
 import QtQuick 2.4
-import Ubuntu.Components 1.3
-import Ubuntu.Components.Popups 1.3
-import Ubuntu.Components.Pickers 1.3
-import Ubuntu.Layouts 1.0
+import Lomiri.Components 1.3
+import Lomiri.Components.Popups 1.3
+import Lomiri.Components.Pickers 1.3
+import Lomiri.Layouts 1.0
 
 /* replace the 'incomplete' QML API U1db with the low-level QtQuick API */
 import QtQuick.LocalStorage 2.0
-import Ubuntu.Components.ListItems 1.3 as ListItem
+import Lomiri.Components.ListItems 1.3 as ListItem
 
 /* note: alias name must have first letter in upperCase */
 import "../js/utility.js" as Utility
@@ -77,7 +77,7 @@ Page{
 
 
     /* A list of Category currently saved in the database */
-    UbuntuListView {
+    LomiriListView {
         id: listView
         anchors.fill: parent
         model: modelListCategory
@@ -192,7 +192,7 @@ Page{
                         Button{
                             id: showReportbutton
                             text: i18n.tr("Global Reports")
-                            color: UbuntuColors.green
+                            color: LomiriColors.green
                             height: units.gu(4)
                             anchors.centerIn: parent.Center
                             width: parent.width

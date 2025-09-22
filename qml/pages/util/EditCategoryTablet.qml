@@ -1,12 +1,12 @@
 import QtQuick 2.4
-import Ubuntu.Components 1.3
-import Ubuntu.Components.Popups 1.3
-import Ubuntu.Components.Pickers 1.3
-import Ubuntu.Layouts 1.0
+import Lomiri.Components 1.3
+import Lomiri.Components.Popups 1.3
+import Lomiri.Components.Pickers 1.3
+import Lomiri.Layouts 1.0
 
 /* replace the 'incomplete' QML API U1db with the low-level QtQuick API */
 import QtQuick.LocalStorage 2.0
-import Ubuntu.Components.ListItems 1.3 as ListItem
+import Lomiri.Components.ListItems 1.3 as ListItem
 
 import "../../js/categoryUtils.js" as CategoryUtils
 import "../../js/utility.js" as Utility
@@ -160,7 +160,7 @@ Column {
                            id: removeItemButton
                            objectName: "removeItem"
                            text: i18n.tr("Remove")
-                           color: UbuntuColors.red
+                           color: LomiriColors.red
                            width: units.gu(14)
                            onClicked: {
                                CategoryUtils.removeSubCategory(subCategoryOptionSelector)
@@ -238,7 +238,7 @@ Column {
             id: deleteCategoryButton
             objectName: "Delete"
             text: i18n.tr("Delete Category")
-            color: UbuntuColors.red
+            color: LomiriColors.red
             width: units.gu(20)
             onClicked: {
                 PopupUtils.open(confirmDeleteCategoryDialogue)
@@ -363,7 +363,7 @@ Column {
                id:deleteButton
                text: i18n.tr("Delete")
                width: units.gu(14)
-               color: UbuntuColors.red
+               color: LomiriColors.red
                onClicked: {
 
                    /* remove ALL data about the CATEGORY: reports, expense, subcategory */
@@ -379,7 +379,7 @@ Column {
                    Storage.deleteCategoryReport(categoryEditPage.categoryId);
 
                    operationresultLabel.text = i18n.tr("Operation Executed Successfully")
-                   operationresultLabel.color = UbuntuColors.green
+                   operationresultLabel.color = LomiriColors.green
 
                    Storage.getAllCategory(); //refresh category list
                    adaptivePageLayout.removePages(categoryExpensePage);

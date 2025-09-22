@@ -1,6 +1,6 @@
 import QtQuick 2.4
-import Ubuntu.Components 1.3
-import Ubuntu.Components.Popups 1.3
+import Lomiri.Components 1.3
+import Lomiri.Components.Popups 1.3
 
 
 /* Notify an operation failed showing the provided message from the caller */
@@ -14,7 +14,7 @@ Dialog {
 
     Label{
         text: i18n.tr("Attention")+": "+msg
-        color: UbuntuColors.red
+        color: LomiriColors.red
     }
 
     Button {

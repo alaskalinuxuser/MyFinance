@@ -1,7 +1,7 @@
 {
     "name": "myfinance.fulvio",
     "description": "A persona finanace manager",
-    "architecture": "@CLICK_ARCH@",
+    "architecture": "all",
     "title": "MyFinance",
     "hooks": {
         "MyFinance": {
@@ -9,7 +9,7 @@
             "desktop":  "MyFinance.desktop"
         }
     },
-    "version": "1.2.3",
+    "version": "1.2.4",
     "maintainer": "fulvio <fulvio999@gmail.com>",
-    "framework" : "ubuntu-sdk-16.04"
+    "framework" : "@CLICK_FRAMEWORK@"
 }
